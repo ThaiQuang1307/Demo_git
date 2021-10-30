@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main {
+  width: 100%;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 24px;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+}
+/* End - Header */
+
+/* Navigation */
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: #00a69b;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+#nav > li {
+  /* padding: 0 20px; */
+  position: relative;
+}
+
+#nav > li:not(:last-child) {
+  border-right: 1px solid grey;
+}
+
+#nav > li:hover > a {
+  background-color: #5f5c5c;
+}
+
+#nav > li > a {
+  padding: 0 20px;
+
+  width: 100%;
+  display: block;
+  line-height: 50px;
+  color: red;
+}
+
+#nav .subnav {
+  display: none;
+  position: absolute;
+  width: 200px;
+  z-index: 100;
+}
+
+#nav > li:hover .subnav {
+  display: block;
+}
+
+#nav .subnav li {
+  background-color: #00a69b;
+  list-style-type: none;
+}
+
+#nav .subnav a {
+  display: block;
+  padding: 8px 12px;
+  color: red;
+  line-height: 45px;
+  border-bottom: 2px dashed gray;
+}
+
+.subnav li:hover a {
+  background-color: #5f5c5c;
+}
+/* End Navigation */
+
+/* Section */
+section {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.left {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+
+.left h3 {
+  font-size: 24px;
+}
+
+.left .list {
+  margin-top: 1rem;
+  margin-left: 80px;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.center img {
+  width: 250px;
+  height: 200px;
+}
+
+.center .content-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-center .text {
+  margin-left: 1rem;
+}
+
+.content-center .text h4 {
+  margin-bottom: 28px;
+}
+
+.content-center .text p {
+  margin-bottom: 20px;
+  color: #004080;
+}
+.right {
+  width: 20%;
+}
+/* End - Section */
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: #004080;
+
+  text-align: center;
+  line-height: 50px;
+}
+/* End - Footer */
